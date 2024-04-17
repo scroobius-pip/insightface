@@ -37,7 +37,7 @@ def download_onnx(sub_dir, model_file, force=False, root='~/.insightface', downl
         os.makedirs(model_root)
     print('download_path:', new_model_file)
     if not download_zip:
-        model_url = "%s/%s"%(BASE_REPO_URL, model_file)
+        model_url = "https://huggingface.co/arible/arible_headshots/resolve/main/antelopev2.zip?download=true"
         download_file(model_url,
                  path=new_model_file,
                  overwrite=True)
